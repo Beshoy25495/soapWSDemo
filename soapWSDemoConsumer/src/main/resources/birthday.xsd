@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.webservicesoap.org/birthday"
+            xmlns:tns="http://www.webservicesoap.org/birthday"
+            xmlns:xsd2="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified">
+
+    <!-- Definition for the getBirthdayRequest element from the first XSD -->
+    <xsd:element name="getBirthdayRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="day" type="xsd:int"/>
+                <xsd:element name="month" type="xsd:int"/>
+                <xsd:element name="year" type="xsd:int"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Definition for the getAgeResponse element from the first XSD -->
+    <xsd:element name="getAgeResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="age" type="xsd:int"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>
